@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "spacing": 4,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": [],
+    "modules-right": ["wireplumber", "backlight", "battery", "clock#date", "clock#time"],
+    "sway/workspaces": {},
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": ["", ""]
+    },
+    "backlight": {
+        "interval": 1,
+        "format": " {percent}%"
+    },
+    "battery": {
+        "interval": 1,
+        "format": " {icon} {capacity}%",
+        "format-full": " Full",
+        "format-charging": " {icon} {capacity}%",
+        "format-discharging": "{icon} {capacity}%",
+        "format-icons": ["", "", ""]
+    },
+    "clock#date": {
+        "interval": 1,
+        "format": "{:%a %m/%d}"
+    },
+    "clock#time": {
+        "interval": 1,
+        "format": "{:%X}"
+    }
+}
